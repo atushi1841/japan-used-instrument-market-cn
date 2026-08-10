@@ -1,0 +1,4 @@
+# 設定ファイル
+__pycache__/
+*.pyc
+.aider*

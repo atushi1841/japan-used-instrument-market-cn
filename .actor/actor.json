@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "japan-used-instrument-market-cn",
+  "title": "日本二手乐器市场 — 跨店比价（Digimart+Ishibashi）",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./INPUT_SCHEMA.json"
+}

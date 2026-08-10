@@ -1,0 +1,48 @@
+{
+  "title": "日本二手乐器市场 — 跨店比价（Digimart+Ishibashi）",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchKeyword": {
+      "title": "Search Keyword",
+      "type": "string",
+      "description": "Search keyword",
+      "prefill": "Fender",
+      "editor": "textfield"
+    },
+    "maxItems": {
+      "title": "Max Items",
+      "type": "integer",
+      "description": "Max items to collect",
+      "default": 100,
+      "minimum": 1
+    },
+    "maxPages": {
+      "title": "Max Pages",
+      "type": "integer",
+      "description": "Max pages per source",
+      "default": 2,
+      "minimum": 1
+    },
+    "sources": {
+      "title": "Sources",
+      "type": "string",
+      "description": "Comma-separated sources",
+      "default": "digimart,ishibashi",
+      "editor": "textfield"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy Configuration",
+      "type": "object",
+      "editor": "proxy",
+      "description": "Apify proxy configuration",
+      "default": {
+        "useApifyProxy": true
+      },
+      "prefill": {
+        "useApifyProxy": true
+      }
+    }
+  },
+  "required": []
+}
