@@ -10,6 +10,19 @@
       "prefill": "Fender",
       "editor": "textfield"
     },
+    "statsMode": {
+      "title": "相場統計モード",
+      "type": "boolean",
+      "description": "ON にすると個別データをスキップして相場統計のみ出力します",
+      "default": false
+    },
+    "statsKeyword": {
+      "title": "相場統計キーワード",
+      "type": "string",
+      "description": "タイトル部分一致でフィルタ（statsMode时に使用）",
+      "default": "",
+      "editor": "textfield"
+    },
     "maxItems": {
       "title": "Max Items",
       "type": "integer",
