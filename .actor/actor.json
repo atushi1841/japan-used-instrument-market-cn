@@ -6,5 +6,96 @@
   "buildTag": "latest",
   "dockerfile": "./Dockerfile",
   "readme": "./README.md",
-  "input": "./INPUT_SCHEMA.json"
+  "input": "./INPUT_SCHEMA.json",
+  "outputSchema": {
+    "actorOutputSchemaVersion": 1,
+    "title": "Output",
+    "description": "Market search results",
+    "type": "object",
+    "properties": {
+      "title": {
+        "title": "Title",
+        "type": "string",
+        "description": "Title",
+        "template": "{{title}}"
+      },
+      "price": {
+        "title": "Price",
+        "type": "string",
+        "description": "Price",
+        "template": "{{price}}"
+      },
+      "detailUrl": {
+        "title": "Detailurl",
+        "type": "string",
+        "description": "Detailurl",
+        "template": "{{detailUrl}}"
+      },
+      "shop": {
+        "title": "Shop",
+        "type": "string",
+        "description": "Shop",
+        "template": "{{shop}}"
+      },
+      "statsType": {
+        "title": "Statstype",
+        "type": "string",
+        "description": "Statstype",
+        "template": "{{statsType}}"
+      },
+      "keyword": {
+        "title": "Keyword",
+        "type": "string",
+        "description": "Keyword",
+        "template": "{{keyword}}"
+      },
+      "count": {
+        "title": "Count",
+        "type": "string",
+        "description": "Count",
+        "template": "{{count}}"
+      },
+      "priceMin": {
+        "title": "Pricemin",
+        "type": "string",
+        "description": "Pricemin",
+        "template": "{{priceMin}}"
+      },
+      "priceMax": {
+        "title": "Pricemax",
+        "type": "string",
+        "description": "Pricemax",
+        "template": "{{priceMax}}"
+      },
+      "priceAvg": {
+        "title": "Priceavg",
+        "type": "string",
+        "description": "Priceavg",
+        "template": "{{priceAvg}}"
+      },
+      "priceMedian": {
+        "title": "Pricemedian",
+        "type": "string",
+        "description": "Pricemedian",
+        "template": "{{priceMedian}}"
+      },
+      "sampleItems": {
+        "title": "Sampleitems",
+        "type": "string",
+        "description": "Sampleitems",
+        "template": "{{sampleItems}}"
+      },
+      "collectedAt": {
+        "title": "Collectedat",
+        "type": "string",
+        "description": "Collectedat",
+        "template": "{{collectedAt}}"
+      }
+    },
+    "required": [
+      "title",
+      "price",
+      "detailUrl"
+    ]
+  }
 }
